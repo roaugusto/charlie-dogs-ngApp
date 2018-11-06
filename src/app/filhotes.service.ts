@@ -9,7 +9,7 @@ export class FilhotesService {
   //private baseUrl = "http://localhost:3000/api/";
   private baseUrl = "https://charlie-dogs-server-peniieyfzm.now.sh/api/";
   private _getAll = this.baseUrl + "getAllAnimals";
-  private _search = this.baseUrl + "earchAnimal";
+  private _search = this.baseUrl + "searchAnimal";
   private _createAnimal = this.baseUrl + "setAnimal"
   private _buyAnimal = this.baseUrl + "buyAnimal"
 

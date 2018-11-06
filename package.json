@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "now-build": "echo 'Built locally'",
-    "now-start": "serve ./dist --single"
+    "now-start": "serve ./dist/ngApp/ --single"
   },
   "private": true,
   "dependencies": {
