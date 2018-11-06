@@ -4,10 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "now-build": "echo 'Built locally'",
+    "now-start": "serve ./dist --single"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +27,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.5.0",
     "add": "^2.0.6",
     "core-js": "^2.5.4",
+    "npm": "^6.4.1",
     "rxjs": "~6.3.3",
     "yarn": "^1.12.1",
     "zone.js": "~0.8.26"
