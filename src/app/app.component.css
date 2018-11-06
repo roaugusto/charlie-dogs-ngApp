@@ -1,0 +1,37 @@
+.header {
+    margin-bottom: 20px;
+}
+
+.footer {
+    -position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart {
+    font-size: 12px;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: rgb(77, 155, 228);
+    margin: 0;
+    border-radius: 50%;
+    position:absolute;
+    right: 15px;
+    padding-left:5px;
+}
+
+.badge{
+    background: rgba(0,0,0,0.5);
+    width: auto;
+    height: auto;
+    margin: 0;
+    border-radius: 50%;
+    position:absolute;
+    top:-13px;
+    right:-8px;
+    padding:5px;
+}

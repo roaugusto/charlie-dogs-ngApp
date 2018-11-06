@@ -1,0 +1,27 @@
+<form class="form-inline mt-1 mt-md-0">
+  <input class="form-control mr-sm-2" [(ngModel)]="query" type="text" name="search" placeholder="Busca" aria-label="Busca">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="search()">Busca</button>
+  <a class="nav-link" routerLink="/filhotesAdd" class="btn btn-outline-success my-2 my-sm-0 custom-btn" role="button" aria-pressed="true">Incluir Filhote</a>
+</form>
+
+
+
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let animal of animals">
+    <div class="card text-center">
+      <div class="card-body">
+        <div class="card-title"> <img class="image-animal" src="{{animal.image}}"></div>
+        <p class="card-text">
+          <b>{{animal.raca}}</b>
+        </p>
+        <p class="card-text">
+          Valor: {{animal.valor}}<br>
+        </p>
+        <a (click)="comprarAnimal(animal)" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-muted">
+        Nascido em: {{animal.dtNasc | date:'dd/MM/yyyy'}}
+      </div>
+    </div>
+  </div>
+</div>

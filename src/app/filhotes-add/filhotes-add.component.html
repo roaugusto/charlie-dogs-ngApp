@@ -1,0 +1,49 @@
+<div class="py-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <span class="anchor" id="formLogin"></span>
+
+      <!-- form card login -->
+      <div class="card rounded-0">
+        <div class="card-header">
+          <h3 class="mb-0">Incluir filhote</h3>
+        </div>
+        <div class="card-body">
+          <form class="form">
+            <div class="form-group">
+              <label>Raça</label>
+              <input type="text" [(ngModel)]="filhotesData.raca" name="raca" class="form-control rounded-0" required>
+            </div>
+            <div class="form-group">
+              <label>Imagem</label>
+              <input type="text" [(ngModel)]="filhotesData.image" name="image" class="form-control rounded-0"
+                required>
+            </div>
+            <div class="form-group">
+              <label>Nascido em</label>
+              <input type="text" [(ngModel)]="filhotesData.dtNasc" name="dtNasc" class="form-control rounded-0"
+                required>
+            </div>
+            <div class="form-group">
+              <select name="sexo" [(ngModel)]="filhotesData.sexo">
+                <option value="Macho">Macho</option>
+                <option value="Femea">Femea</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Valor</label>
+              <input type="text" [(ngModel)]="filhotesData.valor" name="valor" class="form-control rounded-0" required>
+            </div>
+
+            <button type="button" (click)="createFilhote()" class="btn btn-primary float-right">Incluir</button>
+          </form>
+        </div>
+        <!--/card-block-->
+      </div>
+      <!-- /form card login -->
+
+    </div>
+
+
+  </div>
+</div>
