@@ -6,7 +6,8 @@ import { HttpClient, HttpParams } from '@angular/common/http'
 })
 export class FilhotesService {
 
-  private baseUrl = "http://localhost:3000/api/";
+  //private baseUrl = "http://localhost:3000/api/";
+  private baseUrl = "https://charlie-dogs-server-peniieyfzm.now.sh/api/";
   private _getAll = this.baseUrl + "getAllAnimals";
   private _search = this.baseUrl + "earchAnimal";
   private _createAnimal = this.baseUrl + "setAnimal"

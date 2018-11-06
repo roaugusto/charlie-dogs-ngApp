@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  private baseUrl = "http://localhost:3000/api/";
+  //private baseUrl = "http://localhost:3000/api/";
+  private baseUrl = "https://charlie-dogs-server-peniieyfzm.now.sh/api/";
 
   private _registerUrl = this.baseUrl + "register";
   private _loginUrl = this.baseUrl + "login";
