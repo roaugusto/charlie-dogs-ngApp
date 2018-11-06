@@ -10,7 +10,7 @@ import { FilhotesService } from '../filhotes.service';
 })
 export class FilhotesAddComponent implements OnInit {
 
-  filhotesData = {}
+  filhotesData = { raca: "", image: "", dtNasc: "", sexo: "", valor: "", }
   constructor(
     private _filhoteService: FilhotesService,
     private _router: Router
